@@ -183,10 +183,13 @@ const AndharBhar = () => {
             if (response.data.success) {
                 fetchNameWallet();
             } else {
-                toast.error("Failed to update wallet:", response.data.message);
+                // toast.error("Failed to update wallet:", response.data.message);
+                console.log("Failed to update wallet:", response.data.message);
             }
         } catch (error) {
-            toast.error("Error updating wallet:", error);
+            // toast.error("Error updating wallet:", error);
+          console.log("Error updating wallet:", error);
+            
         }
     };
 
