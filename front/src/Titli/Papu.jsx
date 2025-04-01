@@ -110,10 +110,13 @@ const Papu = () => {
         );
         // setResult(true)
         setTimeout(() => {
-          setCountDown(10);
-          setIsProcessing(false)
-          setResult(false)
-        }, 4000)
+          setCountDown(20); // Reset countdown for the new round
+          setIsProcessing(false);
+          setResult(false);
+          setBetPlaced(false); // Allow user to place a new bet
+          setSelectedImages([]);
+          setSelectedCard([]);
+        }, 4000);
         // Reset countdown for the next round
       } catch (error) {
         console.error("Error fetching random image:", error);
