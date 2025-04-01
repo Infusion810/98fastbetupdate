@@ -258,7 +258,7 @@ const AndharBhar = () => {
                 }
             } catch (err) {
                 console.error('Error fetching bets:', err);
-                toast.error("There was an error fetching bets.");
+                
             }
         }
     };
